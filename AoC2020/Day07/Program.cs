@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace Day07
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
@@ -14,8 +14,6 @@ namespace Day07
             Console.WriteLine($"Result for day 07 part 1 task is {Part01(lines)}");
             Console.WriteLine($"Result for day 07 part 2 task is {Part02(lines)}");
         }
-        
-        delegate IEnumerable<string> CountOuterBags(string s);
         private static int Part01(string[] lines)
         {
             var outerBags = new Dictionary<string, HashSet<string>>();
